@@ -1,0 +1,85 @@
+.home-landing {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .left-image {
+    flex: 1;
+    background: url("../src/assets/Landing.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  
+  .right-content {
+    flex: 1;
+    background: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section-label {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .mission {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #444;
+  }
+  
+  .highlight-box {
+    background: #dfe8df;
+    padding: 20px;
+    border-left: 6px solid #888;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .highlight-box .icon {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .highlight-box .brand {
+    font-weight: bold;
+    color: rgb(23, 17, 73);
+  }
+  
+  .scroll-top-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(23, 17, 73);
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  

@@ -1,0 +1,72 @@
+/* Styles pour la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 100px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Section gauche (logo + barre de recherche) */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .logo img {
+    width: 60px; 
+    height: auto; 
+    object-fit: contain; 
+  }
+  
+  .search-bar {
+    padding: 8px 100px;
+    
+    border: 1px solid #d1cece;
+    border-radius: 7px;
+    outline: none;
+  }
+  
+  /* Liens de navigation */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .nav-links li link {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav-links li link:hover {
+    color: gray;
+  }
+  
+  /* Icônes à droite */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: black;
+    color: rgb(145, 142, 142);
+  }
+  
+  .icon:hover {
+    color: rgb(63, 62, 62);
+  }
+  

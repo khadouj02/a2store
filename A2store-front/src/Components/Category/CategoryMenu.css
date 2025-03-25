@@ -1,0 +1,105 @@
+.category-container {
+  margin: 50px auto;
+  text-align: center;
+  color: #333;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.category-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-menu {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+.category-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.category-box {
+  flex: 0 0 auto;
+  width: 160px;
+  min-height: 140px;
+  background: #f5f5f5;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 16px 12px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.category-box:hover,
+.category-box.active {
+  background: #4f4f50;
+  color: white;
+}
+
+.category-box .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.category-box .label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: inherit;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-height: 3.8em;
+  overflow: hidden;
+}
+
+/* ✅ Flèches repositionnées avec marge */
+.category-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.category-arrow.left {
+  left: 10px;
+}
+
+.category-arrow.right {
+  right: 10px;
+}
+
+.category-arrow:hover {
+  background: #323233;
+  color: white;
+}

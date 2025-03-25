@@ -1,0 +1,94 @@
+.homepage {
+  background-image: url('../../assets/homepage.jpg'); /* ton image de fond */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.product-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ✅ Nouvelle version de la carte produit */
+.product-card {
+  background: rgba(255, 255, 255, 0.05); /* Fond transparent élégant */
+  border-radius: 12px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px); /* Flou sur l’arrière-plan */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000; /* Pour rendre le texte plus lisible */
+}
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.arrow.left {
+  margin-right: 15px;
+}
+
+.arrow.right {
+  margin-left: 15px;
+}
